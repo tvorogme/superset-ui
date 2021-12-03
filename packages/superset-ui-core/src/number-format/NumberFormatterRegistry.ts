@@ -54,6 +54,13 @@ export default class NumberFormatterRegistry extends RegistryWithDefaultKey<
     // Create new formatter if does not exist
     const formatter = createD3NumberFormatter({
       formatString: targetFormat,
+      locale: {
+        decimal: ',',
+        thousands: '\xa0',
+        grouping: [3],
+        currency: ['', ' руб.'],
+        nan: 'Не число',
+      },
     });
     this.registerValue(targetFormat, formatter);
 
