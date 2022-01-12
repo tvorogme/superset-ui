@@ -2881,20 +2881,25 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@encodable/color@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@encodable/color/-/color-1.1.1.tgz#f32fe715ebde697b6ac5a08fc7c6da77726b1bc2"
-  integrity sha512-3QlHqsaD+D4W4T6E4Wq4mp7MBpt5yCkCmgTh6AfsoUfJeAEogA92d8r3Y67Zuppcs/eepHW0ip8zfehS2jZNkQ==
+"@encodable/color@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@encodable/color/-/color-1.1.2.tgz#117dd0513329ff9ca7ee4d4416bc5669df510c4b"
+  integrity sha512-Ag0C3vfYbl8qQcWpP6VYbM6qTIlonOhTa4zwRtPs9K6GbGFZM+XB/CHQeuklKD+HN2JLVtGH6YkfYKGbcstStw==
   dependencies:
     "@encodable/registry" "^1.0.3"
     "@types/d3-interpolate" "^1.3.1"
     "@types/d3-scale" "^3.1.0"
-    "@types/d3-scale-chromatic" "^1.2.0"
+    "@types/d3-scale-chromatic" "^2.0.0"
     d3-interpolate "^2.0.1"
     d3-scale "^3.2.1"
     d3-scale-chromatic "^2.0.0"
 
-"@encodable/format@^1.0.5":
+"@encodable/dimension@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@encodable/dimension/-/dimension-1.0.0.tgz#1a98d9c8833a47b1d40cf4ef14c26c841e06bee9"
+  integrity sha512-kXJ/YlzMB0e9nYeNh53uPVPJIpMTfe0l4L2f4crH8Rqwrk5pQQ5fD4/KqZkyUmPdYslVPscbwWUp9XzIgVkHtw==
+
+"@encodable/format@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@encodable/format/-/format-1.0.6.tgz#aae544642a1c88f292540f743d3ab741aa2071ec"
   integrity sha512-gtzLMQyw4AJ7m3TIANm2z2QfzZJLGLdhVmKbizRRu9MRMlYIVXhk+46zPm10RNxGv4ybpsfcCfkCd4nL3RlZRg==
@@ -5414,10 +5419,10 @@
   resolved "https://registry.yarnpkg.com/@types/d3-path/-/d3-path-1.0.9.tgz#73526b150d14cd96e701597cbf346cfd1fd4a58c"
   integrity sha512-NaIeSIBiFgSC6IGUBjZWcscUJEq7vpVu7KthHN8eieTV9d9MqkSOZLH4chq1PmcKy06PNe3axLeKmRIyxJ+PZQ==
 
-"@types/d3-scale-chromatic@^1.2.0":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@types/d3-scale-chromatic/-/d3-scale-chromatic-1.5.1.tgz#e2b7c3401e5c13809f831911eb820e444f4fc67a"
-  integrity sha512-7FtJYrmXTEWLykShjYhoGuDNR/Bda0+tstZMkFj4RRxUEryv16AGh3be21tqg84B6KfEwiZyEpBcTyPyU+GWjg==
+"@types/d3-scale-chromatic@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/d3-scale-chromatic/-/d3-scale-chromatic-2.0.1.tgz#495cbbae7273e0d0ff564cdc19aa6d2b9928da83"
+  integrity sha512-3EuZlbPu+pvclZcb1DhlymTWT2W+lYsRKBjvkH2ojDbCWDYavifqu1vYX9WGzlPgCgcS4Alhk1+zapXbGEGylQ==
 
 "@types/d3-scale@^2.0.2", "@types/d3-scale@^2.1.1":
   version "2.2.4"
@@ -10806,16 +10811,17 @@ emotion-theming@^10.0.19, emotion-theming@^10.0.27:
     "@emotion/weak-memoize" "0.2.5"
     hoist-non-react-statics "^3.3.0"
 
-encodable@^0.7.6:
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/encodable/-/encodable-0.7.8.tgz#e4cc41a46fb2a8353afdf617cefb496000e358cd"
-  integrity sha512-rh5isin1c3ZJuultMyJZGBRbGIh8IrVHQuwlEG3lPMGZQ5yQUb2STIbXGGEbSifxT4POnojKjTxhm3ITTSdriw==
+encodable@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/encodable/-/encodable-1.0.0.tgz#82a71793209db221a026013572b4e2f3a3852df6"
+  integrity sha512-6CLUbA86nbjPZuOsbyiPrvEBSQYPzi6SNBI4j2TxHb+pxfZU2a8jBSSoJ6nSEWlpJuY7F8wRT4g2veyvcXPqdA==
   dependencies:
-    "@encodable/color" "^1.1.0"
-    "@encodable/format" "^1.0.5"
+    "@encodable/color" "^1.1.2"
+    "@encodable/dimension" "^1.0.0"
+    "@encodable/format" "^1.0.6"
     "@types/d3-array" "^2.0.0"
     "@types/d3-interpolate" "^1.3.1"
-    "@types/d3-scale" "^2.1.1"
+    "@types/d3-scale" "^3.1.0"
     "@types/d3-time" "^1.0.10"
     "@types/lodash.get" "^4.4.6"
     d3-array "^2.3.1"
